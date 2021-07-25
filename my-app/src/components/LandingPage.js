@@ -13,9 +13,9 @@ const LandingPage = () => {
                         </div>
                         <div class="flex items-center">
                             <nav class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden font">
-                                <a href="#" class="py-2 px-6 flex text-indigo-500 border-b-2 border-indigo-500">
+                                <Link to='/' class="py-2 px-6 flex text-indigo-500 border-b-2 border-indigo-500">
                                     Home
-                                </a>
+                                </Link>
                                 <a href="#" class="py-2 px-6 flex hover:text-indigo-500">
                                     Watch
                                 </a>
@@ -25,9 +25,9 @@ const LandingPage = () => {
                                 <a href="#" class="py-2 px-6 flex hover:text-indigo-500">
                                     Contact
                                 </a>
-                                <a href="#" class="py-2 px-6 flex hover:text-indigo-500">
+                                <Link to='/login' class="py-2 px-6 flex hover:text-indigo-500">
                                     Sign In
-                                </a>
+                                </Link>
                             </nav>
                             <button class="lg:hidden flex flex-col ml-4">
                                 <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
@@ -50,12 +50,12 @@ const LandingPage = () => {
                                 RE-TECH: like AirBnB, but for high end electronics. Are you tired of paying ridiculous fees for camera and other equipment rentals? Bypass the middleman and rent from a real person!
                             </h2>
                             <div class="flex items-center justify-center mt-4">
-                                <a href="#" class="uppercase py-2 px-4 bg-gray-800 border-2 border-transparent text-white text-md mr-4 hover:bg-gray-900">
+                                <Link to='/register' class="uppercase py-2 px-4 bg-gray-800 border-2 border-transparent text-white text-md mr-4 hover:bg-gray-900">
                                     Create Account
-                                </a>
-                                <a href="#" class="uppercase py-2 px-4 bg-transparent border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md">
+                                </Link>
+                                <Link to='/register/renter' class="uppercase py-2 px-4 bg-transparent border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md">
                                     Create Renter Account
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div class="block w-full mx-auto mt-6 md:mt-0 relative">
