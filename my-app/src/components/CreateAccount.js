@@ -9,6 +9,7 @@ const initialValues = {
     email: ''
 };
 
+
 const SignUpForm = () => {
     const { push } = useHistory();
     const [formValues, setFormValues] = useState(initialValues);

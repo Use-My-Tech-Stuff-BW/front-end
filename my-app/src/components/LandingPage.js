@@ -51,10 +51,10 @@ const LandingPage = () => {
                             </h2>
                             <div class="flex items-center justify-center mt-4">
                                 <Link to='/register' class="uppercase py-2 px-4 bg-gray-800 border-2 border-transparent text-white text-md mr-4 hover:bg-gray-900">
-                                    Create Account
-                                </Link>
-                                <Link to='/register/renter' class="uppercase py-2 px-4 bg-transparent border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md">
                                     Create Renter Account
+                                </Link>
+                                <Link to='/register/owner' class="uppercase py-2 px-4 bg-transparent border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md">
+                                    Create Owner Account
                                 </Link>
                             </div>
                         </div>

@@ -6,8 +6,9 @@ import { Link, useHistory } from "react-router-dom";
 const initialValues = {
     username: '',
     password: '',
-    code: ''
+    role: ''
 };
+
 
 const Login = () => {
     const { push } = useHistory();
@@ -22,13 +23,14 @@ const Login = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        console.log('Logged In!')
 
-        if (formValues.code !== '') {
-            return push('/dashboard/renter')
-        } else {
+        if (formValues.role !== 'owner') {
             return push('/dashboard')
+        } 
+        else {
+            return push('/dashboard/owner')
         }
-
     };
 
     return (
@@ -87,11 +89,12 @@ const Login = () => {
                                         </svg>
                                     </span>
                                     <input
-                                        name="code"
+                                        name="role"
                                         type="password"
-                                        value={formValues.code}
+                                        value={formValues.role}
                                         onChange={handleChanges}
-                                        class=" flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Code" />
+                                        class=" flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" 
+                                        placeholder="Type role (owner or renter)" />
                                 </div>
                             </div>
                             <button type="submit" class="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-black shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2">
@@ -137,7 +140,7 @@ export default Login;
             placeholder='Password'
           />
           <input
-            name="code"
+            name="role"
             type="password"
             value={formValues.code}
             onChange={handleChanges}

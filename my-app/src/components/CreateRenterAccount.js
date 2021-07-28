@@ -9,6 +9,7 @@ const initialValues = {
     email: ''
 };
 
+
 const RenterSignUpForm = () => {
     const { push } = useHistory();
     const [formValues, setFormValues] = useState(initialValues);
@@ -22,7 +23,7 @@ const RenterSignUpForm = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        push('/dashboard/renter')
+        push('/dashboard/owner')
     };
 
     return (
@@ -72,7 +73,7 @@ const RenterSignUpForm = () => {
                                         class=" flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Password" />
                                 </div>
                             </div>
-                            <div class="flex flex-col pt-4 mb-12">
+                            <div class="flex flex-col pt-4 mb-12 ">
                                 <div class="flex relative ">
                                     <span class=" inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
                                         <svg width="15" height="15" fill="currentColor" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
