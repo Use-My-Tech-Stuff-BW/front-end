@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ItemCard from "./ItemCard";
+import ItemCards from "./ItemCards";
 import OwnerHeader from "./OwnerHeader";
 import OwnerSideBar from "./OwnerSideBar";
+
 
 
 const OwnerDashboard = () => {
@@ -12,7 +13,7 @@ const OwnerDashboard = () => {
             <OwnerHeader />
             <div className='dashboard'>
                 <OwnerSideBar />
-                <ItemCard />
+                <ItemCards />
             </div>
         </div>
     )
