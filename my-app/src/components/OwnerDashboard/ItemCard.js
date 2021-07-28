@@ -43,7 +43,7 @@ const ItemCard = () => {
                             Avg
                         </p>
                         <p class="text-gray-400 text-xs">
-                            Detail is not an obsession, it is the very essence of perfection.
+                            Detail is not an obsession, it is the very essence of perfection...
                         </p>
                         <p class="text-indigo-500 text-xl font-medium">
                             $399
