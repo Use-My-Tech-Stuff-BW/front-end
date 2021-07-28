@@ -5,6 +5,8 @@ import LandingPage from './components/LandingPage';
 import Login from './components/LogIn';
 import SignUpForm from './components/CreateAccount';
 import RenterSignUpForm from './components/CreateRenterAccount';
+import OwnerDashboard from './components/OwnerDashboard/OwnerDashboard';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route  path ='/login' component={Login} />
         <Route  exact path ='/register' component={SignUpForm} />
         <Route  path ='/register/owner' component={RenterSignUpForm} />
+        <Route exact path ='/dashboard/owner' component={OwnerDashboard} />
       </div>
     </Router>
   );
