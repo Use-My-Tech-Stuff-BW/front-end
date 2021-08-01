@@ -50,7 +50,7 @@ const OwnerSideBar = () => {
                                     </svg>
                                 </span>
                                 <span class="mx-4 text-sm font-normal">
-                                    Projects
+                                    Messages
                                 </span>
                             </a>
                             <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500" href="#">
@@ -61,7 +61,7 @@ const OwnerSideBar = () => {
                                     </svg>
                                 </span>
                                 <span class="mx-4 text-sm font-normal">
-                                    My tasks
+                                    My Items
                                 </span>
                             </a>
                             <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500" href="#">
@@ -83,7 +83,7 @@ const OwnerSideBar = () => {
                                     </svg>
                                 </span>
                                 <span class="mx-4 text-sm font-normal">
-                                    Time manage
+                                    Rented Out Items
                                 </span>
                             </a>
                             <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500" href="#">
@@ -94,7 +94,7 @@ const OwnerSideBar = () => {
                                     </svg>
                                 </span>
                                 <span class="mx-4 text-sm font-normal">
-                                    Reports
+                                    Earnings
                                 </span>
                             </a>
                             <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500" href="#">

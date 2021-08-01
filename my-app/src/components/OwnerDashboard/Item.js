@@ -1,8 +1,21 @@
 import React from 'react';
+import { useParams, useHistory } from 'react-router-dom';
 
 
 const Item = (props) => {
     const item = props.data
+    const { id } = useParams();
+    const { push } = useHistory();
+
+    const handleDeleteButton = () => {
+        axios.delete(`https://usemytechstuff3.herokuapp.com/api/products/${id}`)
+            .then(res => {
+                console.log("AXIOS - DELETE RESPONSE: ", res)
+                push('/dashboard/owner')
+                
+            })
+            .catch(err => console.log('Failed to delete item', err));
+    }
 
     return (
         <div>
@@ -19,6 +32,13 @@ const Item = (props) => {
                         <p class="text-indigo-500 text-xl font-medium">
                             {item.price}
                         </p>
+                        <div>
+                            <span class="block w-full rounded-md shadow-sm mt-4">
+                                <button type="submit" class="py-2 px-4  bg-indigo-600 hover:bg-indigo-500 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                     Delete Item
+                                </button>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
