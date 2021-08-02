@@ -2,10 +2,10 @@ import React from "react";
 
 
 
-const OwnerSideBar = () => {
+const RenterSideBar = () => {
 
     return (
-        <div>
+        <div className='dashboard'>
             <div class="h-screen hidden lg:block my-4 ml-4 shadow-lg relative w-80">
                 <div class="bg-white h-full rounded-2xl dark:bg-gray-700">
                     <div class="flex items-center justify-center pt-6">
@@ -82,7 +82,7 @@ const OwnerSideBar = () => {
                                     </svg>
                                 </span>
                                 <span class="mx-4 text-sm font-normal">
-                                    Rented Out Items
+                                    Explore
                                 </span>
                             </a>
                             <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500" href="#">
@@ -93,7 +93,7 @@ const OwnerSideBar = () => {
                                     </svg>
                                 </span>
                                 <span class="mx-4 text-sm font-normal">
-                                    Earnings
+                                    My Friends
                                 </span>
                             </a>
                             <a class="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500" href="#">
@@ -111,8 +111,26 @@ const OwnerSideBar = () => {
                     </nav>
                 </div>
             </div>
+
+            <div  className='ml-10'>
+                <section class="bg-indigo-dark h-50 p-8">
+                    <div class="container mx-auto py-8">
+                        <input class="w-full h-16 px-3 rounded mb-8 focus:outline-none focus:shadow-outline text-xl px-8 shadow-lg" type="search" placeholder="Search..." />
+                        <nav class="flex">
+                            <a class="no-underline text-white py-3 px-4 font-medium mr-3 bg-indigo hover:bg-indigo-darker" href="#">Computers</a>
+                            <a class="no-underline text-white py-3 px-4 font-medium mx-3 bg-indigo-darker hover:bg-indigo" href="#">Headphones</a>
+                            <a class="no-underline text-white py-3 px-4 font-medium mx-3 bg-indigo hover:bg-indigo-darker" href="#">Consoles</a>
+                            <a class="no-underline text-white py-3 px-4 font-medium mx-3 bg-indigo-darker hover:bg-indigo" href="#">Speakers</a>
+                            <a class="no-underline text-white py-3 px-4 font-medium mx-3 bg-indigo hover:bg-indigo-darker" href="#">TVs</a>
+                            <a class="no-underline text-white py-3 px-4 font-medium mx-3 bg-indigo-darker hover:bg-indigo" href="#">HDMI</a>
+                            <a class="no-underline text-white py-3 px-4 font-medium mx-3 bg-indigo hover:bg-indigo-darker" href="#">Cell Phones</a>
+                            <a class="no-underline text-white py-3 px-4 font-medium ml-auto bg-indigo-darker hover:bg-indigo" href="#">Bluetooth</a>
+                        </nav>
+                    </div>
+                </section>
+            </div>
         </div>
     )
 }
 
-export default OwnerSideBar;
+export default RenterSideBar;

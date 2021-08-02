@@ -22,16 +22,20 @@
   margin-bottom: -3rem;
   text-decoration: underline;
   font-weight: 600;
-  margin-left: -8rem;
 }
 
 .form {
   margin-top: -25rem;
-  margin-left: 15rem;
+  margin-left: 18rem;
 }
 
 .logout {
   margin-left: 88rem;
   text-decoration: underline;
   font-weight: 600;
+}
+
+.cards {
+  margin-left: 23rem;
+  margin-top: -33rem;
 }
